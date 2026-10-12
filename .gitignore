@@ -1,0 +1,26 @@
+# Segredos — nunca versionar
+.env
+
+# Dados gerados pelo pipeline (mantém só a estrutura de pastas)
+dados/bronze/*
+dados/silver/*
+dados/gold/*
+!dados/**/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+
+# Editor e sistema
+.vscode/
+.claude/settings.local.json
+desktop.ini
+Thumbs.db
